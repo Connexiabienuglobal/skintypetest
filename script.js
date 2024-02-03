@@ -474,3 +474,12 @@ function calculateResult() {
 
     return skinTypes[maxScoreIndex];
 }
+
+
+function updateParticipantsCount() {
+    participantsCount++;
+    var participantsCountElement = document.getElementById('participantsCount');
+    if (participantsCountElement) {
+        participantsCountElement.innerText = `Up to now, ${participantsCount} people have participated in this test.`;
+    }
+}
