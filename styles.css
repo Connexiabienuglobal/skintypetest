@@ -378,6 +378,8 @@ button:hover {
 
 /* 모바일 화면에 대한 스타일 */
 @media only screen and (max-width: 600px) {
+    /* 커버 페이지 스타일 */
+
     body {
         background-image: url('background.jpg'); 
         background-size: cover;
@@ -390,73 +392,82 @@ button:hover {
         scroll-behavior: smooth;
     }
 
-    .container {
-        width: 90%; /* 화면 너비의 90%를 차지하도록 수정 */
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    /* 커버 페이지 스타일 */
-
     .cover-container {
-        padding: 20px;
+        width: 90%;
+        height: auto;
+        padding: 10px;
         border-radius: 10px;
         margin-top: 20px;
-        margin-bottom: 20px;
-        width: 80%;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .logo {
-        max-width: 50%; /* 로고 이미지의 최대 너비를 조절 */
+        max-width: 30%;
         margin-bottom: 20px;
         transform: translateY(10px);
     }
 
     .test-title {
-        font-size: 5vw; /* vw 단위로 폰트 크기 지정 */
+        color: #0051f4;
+        font-size: 3vw;
+        font-weight: bold;
         margin-bottom: 10px;
     }
 
     .routin-title {
-        font-size: 4vw; /* vw 단위로 폰트 크기 지정 */
+        color: #000000;
+        font-size: 2.5vw;
+        font-weight: bold;
         margin-bottom: 10px;
     }
 
     .subtitle {
-        font-size: 3vw; /* vw 단위로 폰트 크기 지정 */
+        color: #000;
+        font-size: 2vw;
         margin-bottom: 20px;
     }
 
     .cover-image {
-        width: 100%; /* 가로 너비 100%로 조정 */
+        width: 100%;
         border-radius: 10px;
         margin-bottom: 10px;
     }
 
     .participants-count {
-        font-size: 2vw; /* vw 단위로 폰트 크기 지정 */
+        font-family: 'Arial', sans-serif;
+        font-size: 1.5vw;
+        color: #656565;
         margin-top: 0;
         margin-bottom: 20px;
     }
 
     .start-button {
+        font-family: 'Arial', sans-serif;
         padding: 10px 20px;
-        font-size: 4vw; /* vw 단위로 폰트 크기 지정 */
+        font-size: 2.5vw;
+        background-color: #1a35ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
         margin-bottom: 30px;
     }
 
     .undertitle {
-        font-size: 3vw; /* vw 단위로 폰트 크기 지정 */
+        color: #5a5a5a;
+        font-size: 2vw;
         margin-bottom: 10px;
     }
 
-    /* 질문 페이지 스타일 */
+    /* 커버페이지 스타일 마무리 - 질문 스타일 시작*/
 
     .question-container {
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 90%; /* 화면 너비의 90%를 차지하도록 수정 */
+        max-width: 600px;
+        margin: 0 auto;
+        height: auto; /* 내부 콘텐츠에 맞게 높이 자동 조절 */
     }
 
     #questionNumber {
@@ -491,4 +502,159 @@ button:hover {
     .choice-button {
         font-size: 4vw; /* vw 단위로 폰트 크기 지정 */
     }
+
+    /* 결과 페이지 */
+
+    .result-container {
+        width: 90%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .choice-button {
+        width: 90%;
+    }
+
+    .choice-button:hover {
+        background-color: #ffffff;
+        color: #0008ff;
+    }
+
+    .title {
+        color: #0051f4;
+        font-size: 3vw;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    #resultText {
+        font-size: 2.5vw;
+        margin-top: 2.5vw;
+        margin-bottom: 3vw;
+    }
+
+    #resultImage {
+        max-width: 100%;
+        height: auto;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .progress-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vw;
+    }
+
+    .progress-bar-container {
+        flex-grow: 1;
+        height: 2vw;
+        background-color: #eee;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 2vw;
+        margin-left: 1vw;
+    }
+
+    .progress-bar {
+        height: 2vw;
+        width: var(--progress);
+        background-color: #1a35ff;
+        border-radius: 10px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .navigation-button {
+        font-size: 2.5vw;
+        padding: 0.8vw 1.2vw;
+    }
+
+    .navigation-button:hover {
+        background-color: #ffffff;
+        color: #0008ff;
+    }
+
+    .arrow {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -1vw;
+        left: -1.2vw;
+    }
+
+    .loading-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.886);
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 1000;
+        max-width: 600px;
+    }
+
+    #loading-container.analysis {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #loading-container.analysis p {
+        font-size: 2.4vw;
+        margin-bottom: 2vw;
+    }
+
+    #loading-container .loading-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #loading-container .loading-icon .icon {
+        content: "";
+        display: inline-block;
+        border: 0.8vw solid #f3f3f3;
+        border-top: 0.8vw solid #001eff;
+        border-radius: 50%;
+        width: 5vw;
+        height: 5vw;
+        animation: spin 1s linear infinite;
+    }
+
+    #loading-container .loading-icon span {
+        margin-top: 1vw;
+        font-size: 2vw;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .cover-image,
+    #resultImage {
+        max-width: 100%;
+        height: auto;
+    }
+
 }
