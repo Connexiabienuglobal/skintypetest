@@ -382,7 +382,7 @@ button:hover {
     /* 모바일에 맞는 스타일 적용 */
     /* 예시: #question-container의 너비를 100%로 설정 */
     #question-container {
-        width: 100%;
+        width: 95%;
     }
 
     body {
@@ -401,6 +401,7 @@ button:hover {
         width: 90%; /* 화면 너비의 90%를 차지하도록 수정 */
         max-width: 600px;
         margin: 0 auto;
+
     }
     
     /* 커버 페이지 스타일 */
@@ -410,10 +411,11 @@ button:hover {
         border-radius: 10px;
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 95%;
     }
     
     .logo {
-        max-width: 20%; /* 로고 이미지의 최대 너비를 조절 */
+        max-width: 15%; /* 로고 이미지의 최대 너비를 조절 */
         margin-bottom: 20px;
         transform: translateY(10px); 
     }
@@ -434,7 +436,7 @@ button:hover {
     }
     
     .cover-image {
-        max-width: 70%;
+        width: 70%;
         border-radius: 10px;
         margin-bottom: 10px;
     }
