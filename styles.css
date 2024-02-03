@@ -468,8 +468,12 @@ button:hover {
         max-width: 600px;
         margin: 0 auto;
         height: auto; /* 내부 콘텐츠에 맞게 높이 자동 조절 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
+    
     #questionNumber {
         font-size: 5vw; /* vw 단위로 폰트 크기 지정 */
         font-weight: bold;
@@ -503,6 +507,11 @@ button:hover {
         font-size: 4vw; /* vw 단위로 폰트 크기 지정 */
     }
 
+    .question-header {
+        flex-direction: column; /* 세로로 배열 */
+        align-items: center; /* 가운데 정렬 */
+    }
+
     /* 결과 페이지 */
 
     .result-container {
@@ -515,9 +524,6 @@ button:hover {
         margin-right: auto;
     }
 
-    .choice-button {
-        width: 90%;
-    }
 
     .choice-button:hover {
         background-color: #ffffff;
