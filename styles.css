@@ -383,6 +383,7 @@ button:hover {
     body {
         background-image: url('background.jpg'); 
         background-size: cover;
+        background-position: center;
         backdrop-filter: blur(2px);
         margin: 0;
         font-family: 'Arial', sans-serif;
@@ -404,16 +405,16 @@ button:hover {
     }
 
     .logo {
-        max-width: 30%;
+        width: 30%;
         margin-bottom: 20px;
         transform: translateY(10px);
     }
 
     .test-title {
         color: #0051f4;
-        font-size: 3vw;
+        font-size: 5vw;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .routin-title {
@@ -425,20 +426,20 @@ button:hover {
 
     .subtitle {
         color: #000;
-        font-size: 2vw;
-        margin-bottom: 20px;
+        font-size: 3.5vw;
+        margin-bottom: 30px;
     }
 
+
     .cover-image {
-        width: 100%; /* 이미지 100%로 설정 */
-        height: 0; /* 높이를 0으로 설정 */
-        padding-bottom: 100%; /* 높이를 width의 1:1 비율로 맞춤 */
-        object-fit: cover; /* 이미지가 컨테이너를 채울 수 있도록 설정 */
+        max-width: 100%; /* 사진의 최대 너비를 조절하세요 */
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
 
     .participants-count {
         font-family: 'Arial', sans-serif;
-        font-size: 1.5vw;
+        font-size: 2vw;
         color: #656565;
         margin-top: 0;
         margin-bottom: 20px;
@@ -447,11 +448,11 @@ button:hover {
     .start-button {
         font-family: 'Arial', sans-serif;
         padding: 10px 20px;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         background-color: #1a35ff;
         color: white;
         border: none;
-        border-radius: 5px;
+        border-radius: 10px;
         cursor: pointer;
         margin-bottom: 30px;
     }
