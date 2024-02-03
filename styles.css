@@ -430,9 +430,10 @@ button:hover {
     }
 
     .cover-image {
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 10px;
+        width: 100%; /* 이미지 100%로 설정 */
+        height: 0; /* 높이를 0으로 설정 */
+        padding-bottom: 100%; /* 높이를 width의 1:1 비율로 맞춤 */
+        object-fit: cover; /* 이미지가 컨테이너를 채울 수 있도록 설정 */
     }
 
     .participants-count {
