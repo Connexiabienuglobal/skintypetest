@@ -179,7 +179,14 @@ var questions = [
     
 ];
 
+// 테스트 참여자 수 초기값 설정
+let participantsCount = 0;
 
+// 테스트 참여자 수 업데이트 함수
+function updateParticipantsCount() {
+    participantsCount++;
+    document.getElementById('participantsCount').innerText = `Up to now, ${participantsCount} people have participated in this test.`;
+}
 
 
 function startTest() {
@@ -194,6 +201,8 @@ function startTest() {
         questionContainer.style.display = "block";
         showNextQuestion();
     }
+
+    updateParticipantsCount();
 }
 
 function showNextQuestion() {
